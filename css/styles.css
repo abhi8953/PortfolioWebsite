@@ -1,0 +1,429 @@
+/* Base Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    overflow-x: hidden;
+}
+
+/* Navigation */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background: #ffffff;
+    color: #292929;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 99999;
+}
+
+header .logo {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+
+nav ul li {
+    margin: 0 30px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #4CAF50;
+}
+
+.btn-download {
+    background-color: white;
+    color:blueviolet;
+    border: 2px solid blueviolet;
+    padding: 10px 20px;
+    border-radius: 30px;
+    text-decoration: none;
+    color: blueviolet;
+}
+
+.btn-sayHello {
+    background-color: white;
+    color:blueviolet;
+    border: 2px solid blueviolet;
+    padding: 10px 20px;
+    border-radius: 30px;
+    text-decoration: none;
+    color: blueviolet;
+    margin-right: -21px;
+}
+
+.btn-sayHello:hover {
+ background-color:blueviolet;
+ color: #fff;
+ text-decoration: none;
+}
+
+.btn-download:hover {
+    background-color:blueviolet;
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Main Content */
+main {
+    margin-top: 50px;
+}
+
+/* About Section */
+.about {
+   
+    padding: 60px 60px;
+    text-align: center;
+}
+
+.ConnectMail {
+    padding: -10px 60px;
+    text-align: center;
+}
+
+.avatar-container {
+    position: relative;
+}
+
+.avatar {
+    width: 160px;
+    border-radius: 50%;
+    animation: avatarHover 1s infinite alternate;
+}
+
+.intro h1 {
+    color: blueviolet;
+    margin: 20px 0;
+    font-size: 1.5em;
+    animation: fadeIn 2s ease-in;
+    font-weight: 600;
+}
+
+.intro p {
+    color:  blueviolet;
+    font-weight: 600;
+    font-size: 20px;
+    animation: fadeIn 2s ease-in 0.5s;
+    margin-bottom: 40px;
+}
+
+.isBottom{
+    margin-bottom: -60px;
+    max-width: 800px;
+    height: 320px;
+}
+/* Introduction Section */
+.brief{
+z-index: 1;
+background: rgb(73,25,109);
+background: linear-gradient(90deg, rgba(73,25,109,0.958420868347339) 0%, rgba(127,19,135,0.9360119047619048) 18%, rgba(243,7,190,0.865983893557423) 69%);
+}
+.introduction{
+text-align: center;
+padding: 40px 0px 400px 0px;
+color: #fff;
+}
+/* Technologies Section */
+.technologies {
+    background: #050404;
+    color: #fff;
+    padding: 50px 20px;
+    text-align: center;
+    border-radius: 6px;
+    box-shadow: 0 0 50px #000;
+    max-width: 1200px;
+    margin-top: -150px;
+    z-index: 9999;
+}
+
+.connections {
+    background: #050404;
+    color: #fff;
+    padding: 50px 20px;
+    text-align: center;
+    border-radius: 6px;
+    box-shadow: 0 0 50px #000;
+    max-width: 1200px;
+    margin-top: 200px;
+    z-index: 9999;
+}
+
+.connections h3 {
+    margin-bottom: 30px;
+}
+
+.technologies h3 {
+    margin-bottom: 25px;
+}
+
+.tech-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-bottom: 15px;
+}
+
+.connect-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-bottom: 15px;
+}
+
+.connect-item {
+    width: 110px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.connect-item img {
+    width: 100%;
+    height: auto;
+    transition: transform .2s;
+}
+
+.connect-item img:hover {
+    transform: scale(1.2);
+}
+
+.tech-item {
+    width: 80px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.tech-item img {
+    width: 100%;
+    height: auto;
+    transition: transform .2s;
+}
+
+.tech-item img:hover {
+    transform: scale(1.2);
+}
+
+/* Projects Section */
+/* Projects Section */
+.projects {
+    margin-top: 100px;
+    background: #f9f9f9;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.projects h2 {
+    margin-bottom: 30px;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px; /* Space between project tiles */
+}
+
+.project {
+    display: flex;
+    margin-top: 80px;
+    flex-direction: column; /* Stack children vertically */
+    background: #050505;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    width: calc(50% - 20px); /* Two items per row with gap */
+    max-width: 500px; /* Max width of each project tile */
+    height: 350px; /* Fixed height for consistent box sizing */
+    box-sizing: border-box; /* Include padding and border in the element’s total width and height */
+    overflow: hidden; /* Hide overflow content */
+    transition: transform 0.3s;
+    box-shadow: 0 8px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    color: #717171;
+}
+
+.project:hover {
+    transform: scale(1.05);
+}
+
+.project h3 {
+    margin-top: 0;
+}
+
+.project p {
+    margin: 10px 0;
+}
+
+.project a {
+    align-self: flex-start; /* Ensure the link is aligned to the start of the flex container */
+    margin-top: auto;
+    color: #8c60f1;
+    text-decoration: none;
+    font-weight: bold;
+    border: 1px solid blueviolet;
+    border-radius: 15px;
+    padding: 8px;
+}
+
+.project a:hover {
+    background-color:blueviolet;
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .project {
+        width: calc(100% - 20px); /* Full width on small screens */
+    }
+}
+
+
+/* CV Section */
+.cv {
+    background: rgb(73,25,109);
+    background: linear-gradient(90deg, rgba(73,25,109,0.958420868347339) 0%, rgba(127,19,135,0.9360119047619048) 18%, rgba(243,7,190,0.865983893557423) 69%);
+    color: #fff;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.cv h2 {
+    margin-bottom: 20px;
+}
+
+.cv p {
+    margin-bottom: 20px;
+}
+
+/* Footer */
+footer {
+    background: #ffffff;
+    color: blueviolet;
+    text-align: center;
+    padding: 20px;
+}
+
+.contactFooter {
+    margin-top: 200px;
+}
+/* Contact Section */
+.contact {
+    background: rgb(73,25,109);
+background: linear-gradient(90deg, rgba(73,25,109,0.958420868347339) 0%, rgba(127,19,135,0.9360119047619048) 18%, rgba(243,7,190,0.865983893557423) 69%);
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.contact h2 {
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+
+form label {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+form input, form textarea {
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background: #fff;
+    color: #333;
+}
+
+form button {
+    margin-top: 10px;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+form button:hover {
+    background-color: #388E3C;
+}
+
+#form-response {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+
+/* Animations */
+@keyframes avatarHover {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.1);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .avatar {
+        width: 100px;
+    }
+
+    .intro h1 {
+        font-size: 2em;
+    }
+
+    .intro p {
+        font-size: 1em;
+    }
+
+    .tech-item {
+        width: 60px;
+    }
+
+    .project {
+        width: 100%;
+        padding: 15px;
+    }
+}
